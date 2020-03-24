@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="10dp"
+    android:orientation="vertical">
+
+    <!--Reference: https://stackoverflow.com/questions/13409912/how-to-create-a-horizontal-loading-progress-bar-->
+    <TextView
+        android:id="@+id/player_step_description_TV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="9dp"
+        tools:layout_editor_absoluteY="49dp"
+        tools:text="Step Description"></TextView>
+
+    <com.google.android.exoplayer2.ui.PlayerView
+        android:id="@+id/player_exoPlayerView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="87dp"
+        tools:ignore="MissingConstraints">
+
+        <ProgressBar
+            android:id="@+id/player_progress_bar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:max="100"
+            android:progress="45" />
+    </com.google.android.exoplayer2.ui.PlayerView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:padding="20dp"
+    android:backgroundTint="#8E5340"
+    android:foreground="?android:selectableItemBackground"
+    android:layout_height="wrap_content">
+
+    <!--//Reference: https://stackoverflow.com/questions/29342633/cardview-corner-radius-->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/view2"
+        android:layout_width="385dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:elevation="12dp"
+        android:backgroundTint="#ECD2CB"
+        android:innerRadius="0dp"
+        android:shape="ring"
+        android:thicknessRatio="1.9"
+        app:cardCornerRadius="40dp">
+
+        <ImageView
+            android:id="@+id/dish_Image_view"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_alignParentTop="true"
+            ></ImageView>
+
+        <TextView
+            android:id="@+id/dish_name_textview"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/gradient_background"
+            android:textAlignment="center"
+            android:textAppearance="@color/colorPrimaryDark"
+            android:textSize="30dp"
+            tools:text="DISH #1" />
+
+    </androidx.cardview.widget.CardView>
+    </LinearLayout>

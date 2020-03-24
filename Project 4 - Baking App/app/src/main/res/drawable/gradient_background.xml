@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--creating a gradient for the main view rating and date-->
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle" >
+    <gradient
+        android:startColor="#6C4437"
+        android:centerColor="#A6703838"
+        android:endColor="#00FFFFFF"
+        android:angle="90"/>
+</shape>
